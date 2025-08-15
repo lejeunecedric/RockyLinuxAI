@@ -23,10 +23,11 @@ That's a bit of a brush but it seems to have left a clean place
 found here : https://discussion.fedoraproject.org/t/quickest-most-efficient-method-to-uninstall-nvidia-drivers-including-cuda/76603/6
 
 From what I understand, Linux NVidia drivers can be installed from different repos :
--Official RHEL, 
--
--RPMFulsion
--ELRepo
+- Official RHEL, 
+- RPEL
+- RPMFulsion
+- ELRepo
+XXX
 
 Finally the one that seems to have fixed it is 
 sudo dnf install akmod-nvidia
@@ -35,10 +36,27 @@ found here : https://rpmfusion.org/Howto/NVIDIA#About_this_Howto
 To explain the difference between a kmod and an akmod
 https://linuxism.ustd.ip.or.kr/2015
 
-Alo
+#Installing ComfyUI
+ComfyUI is a great tool to generate images, videos and more.
+From my experience the basic install where you git clone the repo isn't great, but that maybe because of CUDA issues
 
+Comfy CLI gives you a good way to control the whole thing
+Also important to install Comfy Manager that is a great utility tool to manage a lot of things.
 
+Still that annoying CUDA error on image generation 
 
+##Installing LM Studio
+LM Studio is a great little tool
+
+##Installing VS Code
+https://code.visualstudio.com/docs/setup/linux#_install-vs-code-on-linux
+
+##Using Flatpak
+Flatpak is a tool to install compiled apps. By default it doesn't have a repo linked, so you need to add Flathub
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+#Installing Podman
+Podman is an open source replacement for Docker. It's installed by default but it doesn't ha
 #August 13
 Trying different flavours of Linux, mostly Ubuntu based, and moving to Rocky Linux as it's the most common in the VFX/Animation world
 You may wanna check https://vfxplatform.com/linux/
