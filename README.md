@@ -1,7 +1,18 @@
 This is my journey through the setup of an AI PC under Rocky Linux. 
 I picked my DELL Precision 7520 that has a Quadro M220 GPU and 16 GB of RAM, not the most impressive machine but a good starting point to try things with no counter on.
 
-#August 14
+#Day 3
+Still struggling with the disable-cuda-malloc option that I can't get into ComfyUI to accommodate the missing feature in the 
+
+##Environment management
+Virtual environments are cool, because you can have specific libraries based on what you do, while leaving the system dealing with its own.
+If you develop tools it's really necessary to have something you can easily package for the dependencies.
+The problem is you have many options and it's easy to mix different ones, especially when looking for tricks on the interwebs.
+The 
+venv is part of th
+I use conda because it comes with a full framework of tools Conda https://anaconda.com/app/
+
+#Day 2
 Downloading and installing Rocky Linux 9.6 with KDE
 
 ##Installing NVidia drivers. 
@@ -57,6 +68,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 #Installing Podman
 Podman is an open source replacement for Docker. It's installed by default but it doesn't ha
-#August 13
+
+#Day 1
 Trying different flavours of Linux, mostly Ubuntu based, and moving to Rocky Linux as it's the most common in the VFX/Animation world
 You may wanna check https://vfxplatform.com/linux/
